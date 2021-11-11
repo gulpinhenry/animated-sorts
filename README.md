@@ -20,7 +20,7 @@
 
 ## Description
 
-Shows the animation of several sorts, including bubble, selection, insertion, merge, and quicksort.  Buttons include choices for the sorts, and a delay in milliseconds between the animation frames.
+Shows the animation of several sorts, including bubble, selection, insertion, merge, and quicksort.  Buttons include choices for the sorts, and a delay in milliseconds between the animation frames. Used to explore sorting algorithms and Java applets.
 
 
 [Click this link to go to the live site]()
@@ -35,18 +35,13 @@ Any modern internet browser will do!
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [UI Kit](https://getuikit.com/)
-* []
+* [Java](https://www.oracle.com/java/technologies/java8.html)
 
 ## Technologies Used
 
 * [Microsoft Visual Studio Code](https://code.visualstudio.com/)
 * [Git Bash](https://git-scm.com/downloads)
 * [GitHub](https://github.com/)
-* [NVDA Screen Reader](https://www.nvaccess.org/)
-* [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
-* [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
-* [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/)
 
 ## Practices Used
 
@@ -54,7 +49,7 @@ Any modern internet browser will do!
 
 ## Deployed Link
 
-* [See the Live Site!](https://gulpinhenry.github.io/portfolio-2/)
+* [See the Live Site!]()
 
 ## Authors
 
