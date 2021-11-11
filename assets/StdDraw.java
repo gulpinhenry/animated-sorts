@@ -1,4 +1,4 @@
-//package assets;
+package assets;
 
 /******************************************************************************
  *  Compilation:  javac StdDraw.java
