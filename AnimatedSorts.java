@@ -383,11 +383,12 @@ public class AnimatedSorts
 
 		int pivot = (int)(Math.random()*a.size());
 		int pivotVal = a.get(pivot);
-		showList(a, 5);
+		//showList(a, 5);
 		ArrayList<Integer> left = new ArrayList<>();
 		ArrayList<Integer> right = new ArrayList<>();
 
 		for(int i = 0; i<a.size(); i++){
+			//showList(a, 5);
 			if(a.get(i)<=pivotVal){
 				if(i == pivot) continue;
 				left.add(a.get(i));
@@ -396,7 +397,7 @@ public class AnimatedSorts
 				right.add(a.get(i));
 			}
 		}
-		showList(a, 5);
+		//showList(a, 5);
 		return concat(quickSort(left), pivotVal, quickSort(right));
     }
 
@@ -404,10 +405,12 @@ public class AnimatedSorts
 		ArrayList<Integer> build = new ArrayList<>();
 		for(int i : left){
 			build.add(i);
+			showList(build, 5);
 		}
 		build.add(pivot);
 		for(int i : right){
 			build.add(i);
+			showList(build, 5);
 		}
 		return build;
 	}
