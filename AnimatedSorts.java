@@ -6,9 +6,6 @@
  * include choices for the sorts, and a delay in milliseconds between
  * the animation frames.
  *
- * @author Scott DeRuiter and Henry Kam
- * @version 1.0
- * @since 12/2/2019
  */
 
 import java.awt.Color;
@@ -382,6 +379,36 @@ public class AnimatedSorts
 	}
 
     public ArrayList<Integer> quickSort(ArrayList<Integer> a){
-        return a;
+		if(a.size()<=1) return a;
+
+		int pivot = (int)(Math.random()*a.size());
+		int pivotVal = a.get(pivot);
+		showList(a, 5);
+		ArrayList<Integer> left = new ArrayList<>();
+		ArrayList<Integer> right = new ArrayList<>();
+
+		for(int i = 0; i<a.size(); i++){
+			if(a.get(i)<=pivotVal){
+				if(i == pivot) continue;
+				left.add(a.get(i));
+			}
+			else{
+				right.add(a.get(i));
+			}
+		}
+		showList(a, 5);
+		return concat(quickSort(left), pivotVal, quickSort(right));
     }
+
+	public ArrayList<Integer> concat(ArrayList<Integer> left, int pivot,ArrayList<Integer> right ){
+		ArrayList<Integer> build = new ArrayList<>();
+		for(int i : left){
+			build.add(i);
+		}
+		build.add(pivot);
+		for(int i : right){
+			build.add(i);
+		}
+		return build;
+	}
 } 
